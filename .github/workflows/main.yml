@@ -19,6 +19,11 @@ jobs:
     
     - name: GitHub Action for GraalVM
       uses: graalvm/setup-graalvm@v1
+      with:
+          version: 'latest'
+          java-version: '17'
+          components: 'native-image'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Make staging directory
       run: mkdir staging
     - name: Gluon License
