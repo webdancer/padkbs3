@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.AppBar?>
+<?import com.gluonhq.charm.glisten.control.BottomNavigation?>
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Events">
+   <children>
+      <AppBar prefHeight="54.0" prefWidth="420.0" titleText="Booking" />
+      <BottomNavigation layoutX="-1.0" layoutY="561.0" prefHeight="64.0" prefWidth="420.0">
+          <actionItems>
+              <BottomNavigationButton selected="true" text="Back">
+                  <graphic>
+                      <Icon fx:id="back" content="RECENT_ACTORS" />
+                  </graphic>
+              </BottomNavigationButton>
+              <BottomNavigationButton text="Favourite">
+                  <graphic>
+                      <Icon content="FAVORITE" />
+                  </graphic>
+              </BottomNavigationButton>
+              <BottomNavigationButton text="Nearby">
+                  <graphic>
+                      <Icon content="NEAR_ME" />
+                  </graphic>
+              </BottomNavigationButton>
+          </actionItems>
+      </BottomNavigation>
+      <JFXButton fx:id="button" layoutX="132.0" layoutY="173.0" prefHeight="30.0" prefWidth="147.0" />
+   </children>
+</AnchorPane>

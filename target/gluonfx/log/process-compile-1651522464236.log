@@ -1,0 +1,43 @@
+Process
+=======
+compile
+
+Command Line
+============
+/Library/Java/JavaVirtualMachines/graalvm-svm-java17-darwin-gluon-22.0.0.3-Final/Contents/Home/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/tmp -H:EnableURLProtocols=http,https --initialize-at-build-time=com.gluonhq.charm.glisten.visual.MaterialDesignIcon -H:ReflectionConfigurationFiles=/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/reflectionconfig-arm64-ios.json -H:JNIConfigurationFiles=/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/jniconfig-arm64-ios.json -H:ResourceConfigurationFiles=/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/resourceconfig-arm64-ios.json -H:PageSize=16384 -Dsvm.targetName=iOS -Dsvm.targetArch=arm64 -H:+UseCAPCache -H:CAPCacheDir=/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$IOS_AARCH64 -cp /Users/murdomacnab/.m2/repository/com/gluonhq/substrate/0.0.53/substrate-0.0.53.jar:/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/tmp/classpathJar.jar com.lapismoon.GluonApplication
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+========================================================================================================================
+GraalVM Native Image: Generating 'com.lapismoon.gluonapplication'...
+========================================================================================================================
+[1/7] Initializing...                                                                                    (3.0s @ 0.13GB)
+ Version info: 'GraalVM 22.0.0.2 Java 17 CE'
+[2/7] Performing analysis...  [*********]                                                               (57.0s @ 3.12GB)
+  12,135 (89.86%) of 13,504 classes reachable
+  21,793 (72.18%) of 30,194 fields reachable
+  59,178 (62.74%) of 94,323 methods reachable
+     671 classes,   183 fields, and 1,418 methods registered for reflection
+     116 classes,   105 fields, and   193 methods registered for JNI access
+[3/7] Building universe...                                                                               (4.6s @ 2.46GB)
+[4/7] Parsing methods...      [***]                                                                      (7.5s @ 1.46GB)
+[5/7] Inlining methods...     [*****]                                                                   (11.8s @ 1.12GB)
+[6/7] Compiling methods...    [*****]                                                                   (32.0s @ 2.73GB)
+[7/7] Creating image...
+------------------------------------------------------------------------------------------------------------------------
+                       20.3s (15.4% of total time) in 57 GCs | Peak RSS: 3.54GB | CPU load: 4.18
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/graal_isolate.h (header)
+ /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/com.lapismoon.gluonapplication.h (header)
+ /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/graal_isolate_dynamic.h (header)
+ /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/com.lapismoon.gluonapplication_dynamic.h (header)
+ /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/com.lapismoon.gluonapplication.build_artifacts.txt
+========================================================================================================================
+Finished generating 'com.lapismoon.gluonapplication' in 2m 10s.
+
+
+Result
+======
+result: 0

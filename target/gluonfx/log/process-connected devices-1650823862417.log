@@ -1,0 +1,17 @@
+Process
+=======
+connected devices
+
+Command Line
+============
+/usr/local/bin/ios-deploy -c --no-wifi
+
+Output
+======
+[....] Waiting up to 5 seconds for iOS device to be connected
+[....] Found 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB.
+
+
+Result
+======
+result: false

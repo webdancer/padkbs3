@@ -1,0 +1,15 @@
+Process
+=======
+link
+
+Command Line
+============
+clang /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/AppDelegate.o /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/padkbs3/JvmFuncsFallbacks.o /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/tmp/SVM-1650823671735/com.lapismoon.gluonapplication.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -ljaas -lextnet -lstdc++ -w -fPIC -arch arm64 -mios-version-min=11.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk -Wl,-force_load,/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib/libprism_es2.a -Wl,-force_load,/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib/libglass.a -Wl,-force_load,/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib/libjavafx_font.a -Wl,-force_load,/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib/libprism_common.a -Wl,-force_load,/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib/libjavafx_iio.a -lpthread -llibchelper -lffi -ldarwin -Wl,-framework,Foundation -Wl,-framework,UIKit -Wl,-framework,CoreGraphics -Wl,-framework,MobileCoreServices -Wl,-framework,OpenGLES -Wl,-framework,CoreText -Wl,-framework,QuartzCore -Wl,-framework,ImageIO -Wl,-framework,CoreBluetooth -Wl,-framework,CoreImage -Wl,-framework,CoreLocation -Wl,-framework,CoreMedia -Wl,-framework,CoreMotion -Wl,-framework,CoreVideo -Wl,-framework,Accelerate -Wl,-framework,AVFoundation -Wl,-framework,AudioToolbox -Wl,-framework,MediaPlayer -Wl,-framework,UserNotifications -Wl,-framework,ARKit -Wl,-framework,AVKit -Wl,-framework,SceneKit -Wl,-framework,StoreKit -Wl,-framework,ModelIO -Wl,-framework,WebKit -o /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app/padkbs3 -L/Users/murdomacnab/.gluon/substrate/javafxStaticSdk/19-ea+4/ios-arm64/sdk/lib -L/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.0.0.2/Contents/Home/lib/svm/clibraries/27/ios-arm64 -L/Users/murdomacnab/.gluon/substrate/javaStaticSdk/18-ea+prep18-8/ios-arm64/staticjdk/lib/static -L/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib -Wl,-force_load,/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib/libLifecycle.a -Wl,-force_load,/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib/libStatusbar.a -Wl,-force_load,/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib/libDisplay.a -Wl,-force_load,/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib/libUtil.a -Wl,-force_load,/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/lib/libStorage.a
+
+Output
+======
+
+
+Result
+======
+result: 0

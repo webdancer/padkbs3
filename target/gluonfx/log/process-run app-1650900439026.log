@@ -1,0 +1,100 @@
+Process
+=======
+run app
+
+Command Line
+============
+/usr/local/bin/ios-deploy --id 00008020-0012153C0263002E --bundle /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app --noinstall --noninteractive
+
+Output
+======
+[....] Waiting for iOS device to be connected
+[....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+------ Debug phase ------
+Starting debug of 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB...
+[  0%] Looking up developer disk image
+[ 95%] Developer disk image mounted successfully
+Symbol Path: /Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols
+[100%] Connecting to remote debug server
+-------------------------
+(lldb) command source -s 0 '/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'
+Executing commands in '/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'.
+(lldb)     platform select remote-'ios' --sysroot '/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols'
+  Platform: remote-ios
+ Connected: no
+  SDK Path: "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols"
+(lldb)     target create "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app"
+Current executable set to '/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app' (arm64).
+(lldb)     script fruitstrap_device_app="/private/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB/padkbs3.app"
+(lldb)     script fruitstrap_connect_url="connect://127.0.0.1:65151"
+(lldb)     script fruitstrap_output_path=""
+(lldb)     script fruitstrap_error_path=""
+(lldb)     target modules search-paths add /usr "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/usr" /System "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/System" "/private/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" "/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" /Developer "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/Developer"
+(lldb)     command script import "/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap_00008020_0012153C0263002E.py"
+(lldb)     command script add -f fruitstrap_00008020_0012153C0263002E.connect_command connect
+(lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.run_command run
+(lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.autoexit_command autoexit
+(lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.safequit_command safequit
+(lldb)     connect
+(lldb)     run
+success
+(lldb)     autoexit
+2022-04-25 16:25:39.614583+0100 padkbs3[931:130589] Done creating user.home at /var/mobile/Containers/Data/Application/24609420-C47E-4DD4-9C15-BD10EC41F44E/Library/gluon
+
+
+
+determineCpuFeaures
+Apr 25, 2022 4:25:39 PM com.sun.javafx.application.PlatformImpl startup
+WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @537e8fe6'
+IOSWindowSystemInterface : share 0 view 0 pf otready 
+GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+GL_VERSION (major.minor) = 0.0
+  initialize() returns 4460777376
+IOSWindowSystemInterface : share 82b191a0 view 0 pf otready 
+GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+GL_VERSION (major.minor) = 0.0
+CTXINFO vendor
+CTXINFO renderer
+CTXINFO glExtensions
+CTXINFO GL_ARB_pixel_buffer_object
+CTXINFO allocate the structure
+CTXINFO set function pointers
+IOSWindowSystemInterface : share 82b191a0 view 0 pf otready 
+GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+GL_VERSION (major.minor) = 0.0
+CTXINFO vendor
+CTXINFO renderer
+CTXINFO glExtensions
+CTXINFO GL_ARB_pixel_buffer_object
+CTXINFO allocate the structure
+CTXINFO set function pointers
+768.000000 1024.000000
+768.000000 1024.000000
+768.000000 1024.000000
+2022-04-25 16:25:42.326792+0100 padkbs3[931:130594] fopen failed for data file: errno = 2 (No such file or directory)
+2022-04-25 16:25:42.326951+0100 padkbs3[931:130594] Errors found! Invalidating cache...
+2022-04-25 16:25:42.532335+0100 padkbs3[931:130594] fopen failed for data file: errno = 2 (No such file or directory)
+2022-04-25 16:25:42.532489+0100 padkbs3[931:130594] Errors found! Invalidating cache...
+768.000000 1024.000000
+768.000000 1024.000000
+768.000000 1024.000000
+Search
+Search
+Search
+Menu
+Menu
+Menu
+Menu
+Menu
+Menu
+Search
+Search
+Application was paused
+error: invalid thread
+
+PROCESS_STOPPED
+
+
+Result
+======
+result: false

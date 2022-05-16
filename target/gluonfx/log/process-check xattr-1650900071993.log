@@ -1,0 +1,16 @@
+Process
+=======
+check xattr
+
+Command Line
+============
+xattr /Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.0.0.2
+
+Output
+======
+xattr: No such file: /Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.0.0.2
+
+
+Result
+======
+result: 1

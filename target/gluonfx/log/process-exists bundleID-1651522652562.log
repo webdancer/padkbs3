@@ -1,0 +1,18 @@
+Process
+=======
+exists bundleID
+
+Command Line
+============
+/usr/local/bin/ios-deploy --exists --bundle_id com.lapismoon.padkbs3
+
+Output
+======
+[....] Waiting for iOS device to be connected
+[....] Using da75f929834c3ed86f792a39d709a7272c0db099 (N69AP, iPhone SE, iphoneos, arm64, 15.4.1, ) a.k.a. 'Jets iPhone'.
+false
+
+
+Result
+======
+result: 255

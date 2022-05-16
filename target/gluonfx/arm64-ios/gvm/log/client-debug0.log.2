@@ -1,0 +1,260 @@
+[Mon Apr 25 16:25:17 BST 2022][INFO] ==================== RUN TASK ====================
+[Mon Apr 25 16:25:17 BST 2022][FINE] Validating codesign...
+[Mon Apr 25 16:25:17 BST 2022][FINE] PB Command for verify: codesign --verify -vvvv /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app
+[Mon Apr 25 16:25:17 BST 2022][FINE] Start process verify...
+[Mon Apr 25 16:25:17 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: valid on disk
+[Mon Apr 25 16:25:17 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: satisfies its Designated Requirement
+[Mon Apr 25 16:25:17 BST 2022][FINE] Result for verify: true
+[Mon Apr 25 16:25:17 BST 2022][FINE] Got Bundle ID = com.lapismoon.padkbs3
+[Mon Apr 25 16:25:17 BST 2022][FINE] PB Command for connected devices: /usr/local/bin/ios-deploy -c --no-wifi
+[Mon Apr 25 16:25:17 BST 2022][FINE] Start process connected devices...
+[Mon Apr 25 16:25:17 BST 2022][FINE] [SUB] [....] Waiting up to 5 seconds for iOS device to be connected
+[Mon Apr 25 16:25:18 BST 2022][FINE] [SUB] [....] Found 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB.
+[Mon Apr 25 16:25:22 BST 2022][FINE] Result for connected devices: true
+[Mon Apr 25 16:25:22 BST 2022][FINE] ID found: 00008020-0012153C0263002E
+[Mon Apr 25 16:25:22 BST 2022][FINE] Number of iOS devices connected found: 1
+[Mon Apr 25 16:25:22 BST 2022][FINE] PB Command for trusted computer: /usr/local/bin/ios-deploy -C
+[Mon Apr 25 16:25:22 BST 2022][FINE] Start process trusted computer...
+[Mon Apr 25 16:25:22 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Mon Apr 25 16:25:23 BST 2022][FINE] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Mon Apr 25 16:25:23 BST 2022][FINE] [SUB] BatteryCurrentCapacity:100
+[Mon Apr 25 16:25:23 BST 2022][FINE] Result for trusted computer: 0
+[Mon Apr 25 16:25:23 BST 2022][FINE] PB Command for exists bundleID: /usr/local/bin/ios-deploy --exists --bundle_id com.lapismoon.padkbs3
+[Mon Apr 25 16:25:23 BST 2022][FINE] Start process exists bundleID...
+[Mon Apr 25 16:25:23 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Mon Apr 25 16:25:23 BST 2022][FINE] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Mon Apr 25 16:25:23 BST 2022][FINE] [SUB] true
+[Mon Apr 25 16:25:23 BST 2022][FINE] Result for exists bundleID: 0
+[Mon Apr 25 16:25:23 BST 2022][FINE] PB Command for run app: /usr/local/bin/ios-deploy --id 00008020-0012153C0263002E --bundle /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app --noinstall --noninteractive
+[Mon Apr 25 16:25:23 BST 2022][FINE] Start process run app...
+[Mon Apr 25 16:25:23 BST 2022][INFO] [SUB] [....] Waiting for iOS device to be connected
+[Mon Apr 25 16:25:23 BST 2022][INFO] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Mon Apr 25 16:25:23 BST 2022][INFO] [SUB] ------ Debug phase ------
+[Mon Apr 25 16:25:23 BST 2022][INFO] [SUB] Starting debug of 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB...
+[Mon Apr 25 16:25:25 BST 2022][INFO] [SUB] [  0%] Looking up developer disk image
+[Mon Apr 25 16:25:25 BST 2022][INFO] [SUB] [ 95%] Developer disk image mounted successfully
+[Mon Apr 25 16:25:25 BST 2022][INFO] [SUB] Symbol Path: /Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols
+[Mon Apr 25 16:25:25 BST 2022][INFO] [SUB] [100%] Connecting to remote debug server
+[Mon Apr 25 16:25:25 BST 2022][INFO] [SUB] -------------------------
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB] (lldb) command source -s 0 '/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB] Executing commands in '/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'.
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB] (lldb)     platform select remote-'ios' --sysroot '/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols'
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB]   Platform: remote-ios
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB]  Connected: no
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB]   SDK Path: "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols"
+[Mon Apr 25 16:25:26 BST 2022][INFO] [SUB] (lldb)     target create "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app"
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] Current executable set to '/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app' (arm64).
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_device_app="/private/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB/padkbs3.app"
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_connect_url="connect://127.0.0.1:65151"
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_output_path=""
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_error_path=""
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     target modules search-paths add /usr "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/usr" /System "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/System" "/private/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" "/var/containers/Bundle/Application/85D8249F-45CA-464B-BFA7-B1B7167B01AB" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" /Developer "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/Developer"
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     command script import "/tmp/6CAFCE75-AC30-4BC6-AFD3-6A00A41CB676/fruitstrap_00008020_0012153C0263002E.py"
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     command script add -f fruitstrap_00008020_0012153C0263002E.connect_command connect
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.run_command run
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.autoexit_command autoexit
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.safequit_command safequit
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     connect
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     run
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] success
+[Mon Apr 25 16:25:36 BST 2022][INFO] [SUB] (lldb)     autoexit
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] 2022-04-25 16:25:39.614583+0100 padkbs3[931:130589] Done creating user.home at /var/mobile/Containers/Data/Application/24609420-C47E-4DD4-9C15-BD10EC41F44E/Library/gluon
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] 
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] 
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] 
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] determineCpuFeaures
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] Apr 25, 2022 4:25:39 PM com.sun.javafx.application.PlatformImpl startup
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @537e8fe6'
+[Mon Apr 25 16:25:39 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 0 view 0 pf otready 
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB]   initialize() returns 4460777376
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 82b191a0 view 0 pf otready 
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO vendor
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO renderer
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO glExtensions
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO GL_ARB_pixel_buffer_object
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO allocate the structure
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO set function pointers
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 82b191a0 view 0 pf otready 
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO vendor
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO renderer
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO glExtensions
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO GL_ARB_pixel_buffer_object
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO allocate the structure
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] CTXINFO set function pointers
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:40 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:42 BST 2022][INFO] [SUB] 2022-04-25 16:25:42.326792+0100 padkbs3[931:130594] fopen failed for data file: errno = 2 (No such file or directory)
+[Mon Apr 25 16:25:42 BST 2022][INFO] [SUB] 2022-04-25 16:25:42.326951+0100 padkbs3[931:130594] Errors found! Invalidating cache...
+[Mon Apr 25 16:25:42 BST 2022][INFO] [SUB] 2022-04-25 16:25:42.532335+0100 padkbs3[931:130594] fopen failed for data file: errno = 2 (No such file or directory)
+[Mon Apr 25 16:25:42 BST 2022][INFO] [SUB] 2022-04-25 16:25:42.532489+0100 padkbs3[931:130594] Errors found! Invalidating cache...
+[Mon Apr 25 16:25:48 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:48 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:48 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Mon Apr 25 16:25:58 BST 2022][INFO] [SUB] Search
+[Mon Apr 25 16:25:59 BST 2022][INFO] [SUB] Search
+[Mon Apr 25 16:26:00 BST 2022][INFO] [SUB] Search
+[Mon Apr 25 16:26:02 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:03 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:06 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:08 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:09 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:09 BST 2022][INFO] [SUB] Menu
+[Mon Apr 25 16:26:17 BST 2022][INFO] [SUB] Search
+[Mon Apr 25 16:26:18 BST 2022][INFO] [SUB] Search
+[Mon Apr 25 16:27:11 BST 2022][INFO] [SUB] Application was paused
+[Mon Apr 25 16:27:18 BST 2022][INFO] [SUB] error: invalid thread
+[Mon Apr 25 16:27:18 BST 2022][INFO] [SUB] 
+[Mon Apr 25 16:27:18 BST 2022][INFO] [SUB] PROCESS_STOPPED
+[Mon Apr 25 16:27:19 BST 2022][FINE] Result for run app: false
+[Mon Apr 25 16:27:19 BST 2022][SEVERE] Process run app failed with result: false
+Check the log files under /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Mon Apr 25 16:27:19 BST 2022][INFO] Logging process [run app] to file: /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/log/process-run app-1650900439026.log
+[Mon Apr 25 16:27:19 BST 2022][INFO] There was an error running the app: /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app with bundle id: com.lapismoon.padkbs3
+[Mon Apr 25 16:27:19 BST 2022][INFO] Running com.lapismoon.padkbs3 failed!
+[Mon May 02 21:17:23 BST 2022][INFO] ==================== RUN TASK ====================
+[Mon May 02 21:17:23 BST 2022][FINE] Validating codesign...
+[Mon May 02 21:17:23 BST 2022][FINE] PB Command for verify: codesign --verify -vvvv /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app
+[Mon May 02 21:17:23 BST 2022][FINE] Start process verify...
+[Mon May 02 21:17:23 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: valid on disk
+[Mon May 02 21:17:23 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: satisfies its Designated Requirement
+[Mon May 02 21:17:23 BST 2022][FINE] Result for verify: true
+[Mon May 02 21:17:23 BST 2022][FINE] Got Bundle ID = com.lapismoon.padkbs3
+[Mon May 02 21:17:23 BST 2022][FINE] PB Command for connected devices: /usr/local/bin/ios-deploy -c --no-wifi
+[Mon May 02 21:17:23 BST 2022][FINE] Start process connected devices...
+[Mon May 02 21:17:23 BST 2022][FINE] [SUB] [....] Waiting up to 5 seconds for iOS device to be connected
+[Mon May 02 21:17:25 BST 2022][FINE] [SUB] [....] Found 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB.
+[Mon May 02 21:17:28 BST 2022][FINE] Result for connected devices: true
+[Mon May 02 21:17:28 BST 2022][FINE] ID found: 00008020-0012153C0263002E
+[Mon May 02 21:17:28 BST 2022][FINE] Number of iOS devices connected found: 1
+[Mon May 02 21:17:28 BST 2022][FINE] PB Command for trusted computer: /usr/local/bin/ios-deploy -C
+[Mon May 02 21:17:28 BST 2022][FINE] Start process trusted computer...
+[Mon May 02 21:17:28 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Mon May 02 21:17:29 BST 2022][FINE] [SUB] [....] Using da75f929834c3ed86f792a39d709a7272c0db099 (N69AP, iPhone SE, iphoneos, arm64, 15.4.1, ) a.k.a. 'Jets iPhone'.
+[Mon May 02 21:17:30 BST 2022][FINE] [SUB] BatteryCurrentCapacity:80
+[Mon May 02 21:17:30 BST 2022][FINE] Result for trusted computer: 0
+[Mon May 02 21:17:30 BST 2022][FINE] PB Command for exists bundleID: /usr/local/bin/ios-deploy --exists --bundle_id com.lapismoon.padkbs3
+[Mon May 02 21:17:30 BST 2022][FINE] Start process exists bundleID...
+[Mon May 02 21:17:30 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Mon May 02 21:17:31 BST 2022][FINE] [SUB] [....] Using da75f929834c3ed86f792a39d709a7272c0db099 (N69AP, iPhone SE, iphoneos, arm64, 15.4.1, ) a.k.a. 'Jets iPhone'.
+[Mon May 02 21:17:32 BST 2022][FINE] [SUB] false
+[Mon May 02 21:17:32 BST 2022][FINE] Result for exists bundleID: 255
+[Mon May 02 21:17:32 BST 2022][INFO] Logging process [exists bundleID] to file: /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/log/process-exists bundleID-1651522652562.log
+[Mon May 02 21:17:32 BST 2022][INFO] 
+
+The bundle id com.lapismoon.padkbs3 is not found on the device.
+Please, install it first, and then try again
+[Mon May 02 21:17:32 BST 2022][INFO] Running com.lapismoon.padkbs3 failed!
+[Tue May 10 10:25:55 BST 2022][INFO] ==================== RUN TASK ====================
+[Tue May 10 10:25:55 BST 2022][FINE] Validating codesign...
+[Tue May 10 10:25:55 BST 2022][FINE] PB Command for verify: codesign --verify -vvvv /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app
+[Tue May 10 10:25:55 BST 2022][FINE] Start process verify...
+[Tue May 10 10:25:56 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: valid on disk
+[Tue May 10 10:25:56 BST 2022][FINE] [SUB] /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app: satisfies its Designated Requirement
+[Tue May 10 10:25:56 BST 2022][FINE] Result for verify: true
+[Tue May 10 10:25:56 BST 2022][FINE] Got Bundle ID = com.lapismoon.padkbs3
+[Tue May 10 10:25:56 BST 2022][FINE] PB Command for connected devices: /usr/local/bin/ios-deploy -c --no-wifi
+[Tue May 10 10:25:56 BST 2022][FINE] Start process connected devices...
+[Tue May 10 10:25:56 BST 2022][FINE] [SUB] [....] Waiting up to 5 seconds for iOS device to be connected
+[Tue May 10 10:25:56 BST 2022][FINE] [SUB] [....] Found 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB.
+[Tue May 10 10:26:01 BST 2022][FINE] Result for connected devices: true
+[Tue May 10 10:26:01 BST 2022][FINE] ID found: 00008020-0012153C0263002E
+[Tue May 10 10:26:01 BST 2022][FINE] Number of iOS devices connected found: 1
+[Tue May 10 10:26:01 BST 2022][FINE] PB Command for trusted computer: /usr/local/bin/ios-deploy -C
+[Tue May 10 10:26:01 BST 2022][FINE] Start process trusted computer...
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] BatteryCurrentCapacity:86
+[Tue May 10 10:26:01 BST 2022][FINE] Result for trusted computer: 0
+[Tue May 10 10:26:01 BST 2022][FINE] PB Command for exists bundleID: /usr/local/bin/ios-deploy --exists --bundle_id com.lapismoon.padkbs3
+[Tue May 10 10:26:01 BST 2022][FINE] Start process exists bundleID...
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] [....] Waiting for iOS device to be connected
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Tue May 10 10:26:01 BST 2022][FINE] [SUB] true
+[Tue May 10 10:26:01 BST 2022][FINE] Result for exists bundleID: 0
+[Tue May 10 10:26:01 BST 2022][FINE] PB Command for run app: /usr/local/bin/ios-deploy --id 00008020-0012153C0263002E --bundle /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app --noinstall --noninteractive
+[Tue May 10 10:26:01 BST 2022][FINE] Start process run app...
+[Tue May 10 10:26:01 BST 2022][INFO] [SUB] [....] Waiting for iOS device to be connected
+[Tue May 10 10:26:01 BST 2022][INFO] [SUB] [....] Using 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad'.
+[Tue May 10 10:26:01 BST 2022][INFO] [SUB] ------ Debug phase ------
+[Tue May 10 10:26:01 BST 2022][INFO] [SUB] Starting debug of 00008020-0012153C0263002E (J210AP, iPad mini 5, iphoneos, arm64e, 15.4.1, 19E258) a.k.a. 'Murdo’s iPad' connected through USB...
+[Tue May 10 10:26:03 BST 2022][INFO] [SUB] [  0%] Looking up developer disk image
+[Tue May 10 10:26:03 BST 2022][INFO] [SUB] [ 95%] Developer disk image mounted successfully
+[Tue May 10 10:26:03 BST 2022][INFO] [SUB] Symbol Path: /Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols
+[Tue May 10 10:26:03 BST 2022][INFO] [SUB] [100%] Connecting to remote debug server
+[Tue May 10 10:26:03 BST 2022][INFO] [SUB] -------------------------
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB] (lldb) command source -s 0 '/tmp/E367D5B3-1D52-4FB7-AEAA-30B1CAB4F2C1/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB] Executing commands in '/tmp/E367D5B3-1D52-4FB7-AEAA-30B1CAB4F2C1/fruitstrap-lldb-prep-cmds-00008020_0012153C0263002E'.
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB] (lldb)     platform select remote-'ios' --sysroot '/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols'
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB]   Platform: remote-ios
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB]  Connected: no
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB]   SDK Path: "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols"
+[Tue May 10 10:26:04 BST 2022][INFO] [SUB] (lldb)     target create "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app"
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] Current executable set to '/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app' (arm64).
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_device_app="/private/var/containers/Bundle/Application/249E2955-31C0-4FAE-9929-6044FC3E7A9F/padkbs3.app"
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_connect_url="connect://127.0.0.1:56063"
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_output_path=""
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     script fruitstrap_error_path=""
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     target modules search-paths add /usr "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/usr" /System "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/System" "/private/var/containers/Bundle/Application/249E2955-31C0-4FAE-9929-6044FC3E7A9F" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" "/var/containers/Bundle/Application/249E2955-31C0-4FAE-9929-6044FC3E7A9F" "/Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios" /Developer "/Users/murdomacnab/Library/Developer/Xcode/iOS DeviceSupport/15.4.1 (19E258) arm64e/Symbols/Developer"
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     command script import "/tmp/E367D5B3-1D52-4FB7-AEAA-30B1CAB4F2C1/fruitstrap_00008020_0012153C0263002E.py"
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     command script add -f fruitstrap_00008020_0012153C0263002E.connect_command connect
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.run_command run
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.autoexit_command autoexit
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     command script add -s asynchronous -f fruitstrap_00008020_0012153C0263002E.safequit_command safequit
+[Tue May 10 10:26:12 BST 2022][INFO] [SUB] (lldb)     connect
+[Tue May 10 10:26:13 BST 2022][INFO] [SUB] (lldb)     run
+[Tue May 10 10:26:13 BST 2022][INFO] [SUB] success
+[Tue May 10 10:26:13 BST 2022][INFO] [SUB] (lldb)     autoexit
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] 2022-05-10 10:26:15.346640+0100 padkbs3[12872:1185294] Done creating user.home at /var/mobile/Containers/Data/Application/B2C602BB-42F1-421A-815C-448EA9A9F3BF/Library/gluon
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] determineCpuFeaures
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] May 10, 2022 10:26:15 AM com.sun.javafx.application.PlatformImpl startup
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @31fa1761'
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 0 view 0 pf otready 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB]   initialize() returns 4372691776
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 80304440 view 0 pf otready 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO vendor
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO renderer
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO glExtensions
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO GL_ARB_pixel_buffer_object
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO allocate the structure
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO set function pointers
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] IOSWindowSystemInterface : share 80304440 view 0 pf otready 
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION string = OpenGL ES 2.0 Metal - 94.5
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] GL_VERSION (major.minor) = 0.0
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO vendor
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO renderer
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO glExtensions
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO GL_ARB_pixel_buffer_object
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO allocate the structure
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] CTXINFO set function pointers
+[Tue May 10 10:26:15 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:16 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:16 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:42 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:42 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:42 BST 2022][INFO] [SUB] 768.000000 1024.000000
+[Tue May 10 10:26:59 BST 2022][INFO] [SUB] Application was paused
+[Tue May 10 10:27:02 BST 2022][INFO] [SUB] error: invalid thread
+[Tue May 10 10:27:02 BST 2022][INFO] [SUB] 
+[Tue May 10 10:27:02 BST 2022][INFO] [SUB] PROCESS_STOPPED
+[Tue May 10 10:27:02 BST 2022][FINE] Result for run app: false
+[Tue May 10 10:27:02 BST 2022][SEVERE] Process run app failed with result: false
+Check the log files under /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Tue May 10 10:27:02 BST 2022][INFO] Logging process [run app] to file: /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/log/process-run app-1652174822578.log
+[Tue May 10 10:27:02 BST 2022][INFO] There was an error running the app: /Users/murdomacnab/IdeaProjects/padkbs3/target/gluonfx/arm64-ios/padkbs3.app with bundle id: com.lapismoon.padkbs3
+[Tue May 10 10:27:02 BST 2022][INFO] Running com.lapismoon.padkbs3 failed!
