@@ -17,7 +17,7 @@ jobs:
         xcode-version: '13.2.1'
     - uses: actions/checkout@v2
     - name: Setup GraalVM environment
-      uses: DeLaGuardo/setup-graalvm@master
+      uses: DeLaGuardo/setup-graalvm@5.0
       with:
         graalvm: '22.1'
         java: 'java11'
