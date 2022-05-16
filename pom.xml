@@ -90,7 +90,7 @@
                 <artifactId>gluonfx-maven-plugin</artifactId>
                 <version>${gluonfx.plugin.version}</version>
                 <configuration>
-                    <graalvmHome>/Library/Java/JavaVirtualMachines/graalvm-svm-java17-darwin-gluon-22.0.0.3-Final/Contents/Home</graalvmHome>
+                    
                     <target>${gluonfx.target}</target>
                     <attachList>
                         <list>display</list>
